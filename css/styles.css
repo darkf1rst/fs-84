@@ -2,11 +2,38 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
+
+
 :root {
 --main-title-color: #FFFFFF;
 --accent-color: #ff6c00;
 --secondary-title-color :rgba(157, 164, 189, 0.6);
+--basic-margin: 20px;
+
 }
+
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  padding-left: 15px;
+  padding-right: 30px;
+}
+.link{
+  text-decoration: none;
+}
+
 .list {
   list-style: none;
 }
@@ -41,6 +68,7 @@ cursor: pointer;
 }
 .header {
   background-color: grey;
+  padding: 32px 0;
 }
 .header-navigation {
 }
@@ -105,6 +133,7 @@ hero section */
   color: var(--accent-color);
 }
 .hero-subtitle {
+  margin-bottom: var(--basic-margin);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -112,6 +141,7 @@ hero section */
   color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
+  margin-bottom: var(--basic-margin);
   font-family: "Raleway";
   font-style: normal;
   font-size: 72px;
@@ -121,6 +151,7 @@ hero section */
   color: var(--main-title-color);
 }
 .hero-description {
+  width: 360px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -136,13 +167,16 @@ hero section */
 .about-item {
 }
 .about-subtitle {
+  margin-bottom: var(--basic-margin);
  color: #555555;
 }
 .about-title {
+  margin-bottom: var(--basic-margin);
   
   color: #303030;
 }
 .about-description {
+  margin-bottom: 42px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
@@ -158,6 +192,8 @@ hero section */
   color: #303030;
 }
 .about-description span {
+  margin-bottom: var(--basic-margin);
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -167,16 +203,22 @@ hero section */
 
 /* price  */
 .prices {
+  padding: 120px 0;
 }
 .prices-subtitle {
+  margin-bottom: var(--basic-margin);
 
 color: rgba(157, 164, 189, 0.6);
 }
 .prices-title {
+  margin-bottom: 44px;
 color: var(--main-title-color);
 }
 .prices-list {
+  border: 1px solid green;
+  padding: 30px;
 }
+
 .list {
 }
 .prices-item {
