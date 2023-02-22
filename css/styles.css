@@ -216,7 +216,7 @@ color: var(--main-title-color);
 }
 .prices-list {
   border: 1px solid green;
-  padding: 30px;
+  padding: 30px 20px;
 }
 
 .list {
@@ -224,10 +224,10 @@ color: var(--main-title-color);
 .prices-item {
 }
 .prices-item-text {
+  margin-top: var(--basic-margin);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  text-align: right;
   letter-spacing: 0.02em;
   color: #9DA4BD;
 
