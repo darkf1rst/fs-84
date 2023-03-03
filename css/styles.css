@@ -113,8 +113,9 @@ ul {
   margin-right: 42px;
 }
 .header-btn {
+  max-width: 160px;
+  background-color: transparent;
   font-family: inherit;
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -124,22 +125,31 @@ ul {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   color: #ffffff;
+  padding: 12px 20px;
 }
 /* 
 hero section */
 
 .hero {
-  background-color: grey;
-  padding: 272px 100px 208px;
 }
 .hero-container {
   display: flex;
 }
 .hero-content {
   background-color: grey;
-  padding: ;
+  padding: 272px 100px 208px;
+  flex-grow: 1;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(/img/Slider\ img\ 3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-list {
+  width: 100px;
 }
 .hero-item {
 }
@@ -175,7 +185,6 @@ hero section */
 }
 .hero-description {
   width: 360px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -355,6 +364,37 @@ hero section */
   color: #ff6c00;
 }
 
+.barbers-social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.barbers-social-item {
+  width: 44px;
+  height: 44px;
+}
+.barbers-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.barbers-social-link:is(:hover, :focus) {
+  background-color: orange;
+  color: white;
+}
+
+.barbers-social-icon {
+  fill: currentColor;
+}
+/* .barbers-social-link:is(:hover, :focus) .barbers-social-icon {
+  fill: white;
+} */
+
 /* gallery */
 .gallery {
   padding: 120px 0;
@@ -375,10 +415,12 @@ hero section */
 
 .gallery-subtitle {
   margin-bottom: 44px;
+  color: var(--secondary-title-color);
 }
 
 .gallery-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .gallery-item {
@@ -390,7 +432,7 @@ hero section */
 .contact {
 }
 .contact-title {
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 
 .contact-address {
