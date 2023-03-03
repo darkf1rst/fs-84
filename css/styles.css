@@ -183,6 +183,7 @@ hero section */
 
   color: var(--main-title-color);
 }
+
 .hero-description {
   width: 360px;
   font-size: 18px;
@@ -210,8 +211,19 @@ hero section */
   width: calc(100%- 30px);
 }
 .about-subtitle {
+  display: flex;
   margin-bottom: var(--basic-margin);
   color: #555555;
+}
+.about-subtitle::before {
+  display: flex;
+  gap: 20px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  align-items: center;
+  text-transform: uppercase;
 }
 .about-title {
   margin-bottom: var(--basic-margin);
@@ -247,7 +259,12 @@ hero section */
 /* price  */
 .prices {
   padding: 120px 0;
-  background-color: gray;
+  background-color: white;
+  background-image: url(/img/img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #111319;
 }
 .prices-container {
 }
@@ -276,6 +293,14 @@ hero section */
 .prices-item {
   display: flex;
   justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+.prices-item::before {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: rgba(157, 164, 189, 0.12);
 }
 .prices-item-text {
   margin-top: var(--basic-margin);
@@ -285,6 +310,9 @@ hero section */
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+.prices-item-text:first-child {
+  order: -1;
+}
 .prices-btn {
   display: block;
   margin: auto;
@@ -293,6 +321,7 @@ hero section */
 /* benefits */
 
 .benefits {
+  width: 40%;
 }
 .benefits-item {
 }
@@ -324,6 +353,12 @@ hero section */
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #555555;
+}
+.benefits-content {
+  width: 40%;
+}
+.benefits-container {
+  display: flex;
 }
 .barbers {
   background-color: grey;
